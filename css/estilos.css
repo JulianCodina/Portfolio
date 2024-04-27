@@ -268,47 +268,60 @@ footer .encabezado-titulo{
 }
 
 
-@media screen and (max-width:760px){
-    header .menu{
+@media screen and (max-width: 760px) {
+    /* Estilos para pantalla hasta 760px de ancho */
+    header .menu {
+        left: 0;
+        right: 0;
         justify-content: center;
     }
-    header .contenido-header .texto-header{
-       font-size:18px;
+    header .contenido-header .texto-header {
+        font-size: 18px;
     }
-    header .contenido-header .texto-header .desaparecer{
+    header .contenido-header .texto-header .desaparecer {
         display: none;
     }
 }
-@media screen and (max-width:630px){
-    header .contenido-header .titulo-header{
-        font-size:80px;
+
+@media screen and (max-width: 630px) {
+    /* Estilos para pantalla hasta 630px de ancho */
+    header .contenido-header .titulo-header {
+        font-size: 60px; /* Modificado para ajustar mejor en pantallas más pequeñas */
     }
-    header .contenido-header .linea-header{
-        width: 400px;
+    header .contenido-header .linea-header {
+        width: 300px; /* Modificado para ajustar mejor en pantallas más pequeñas */
     }
-    main .herramientas .galeria .fotos{
-        width:49%;
-    }
-}
-@media screen and (max-width: 500px){
-    header .contenido-header .titulo-header{
-        font-size:40px;
-    }
-    main .quehacemos .contenido-cajas .tarjeta{
-       width: 48%;
-    }
-    main .contenido-cajas{
-        justify-content: center
-    }
-    main .quehacemos .contenido-cajas .tarjeta{
-        margin:20px 0;
+    main .herramientas .galeria .fotos {
+        width: 49%;
     }
 }
-@media screen and (max-width: 350px){
-    main .quehacemos .contenido-cajas .tarjeta{
+
+@media screen and (max-width: 500px) {
+    /* Estilos para pantalla hasta 500px de ancho */
+    header .contenido-header .titulo-header {
+        font-size: 40px;
+    }
+    main .quehacemos .contenido-cajas .tarjeta {
+        width: 90%; /* Modificado para ajustar mejor en pantallas más pequeñas */
+        margin: 20px auto;
+    }
+    main .contenido-cajas {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Estilos para pantalla hasta 350px de ancho */
+    main .quehacemos .contenido-cajas .tarjeta {
         width: 98%;
     }
-    header .contenido-header .texto-header{
-        font-size:15px;
+    header .contenido-header .texto-header {
+        font-size: 15px;
+    }
+    footer .content-foo h4 {
+        font-size: 16px;
+    }
+    footer .content-foo p {
+        font-size: 14px;
     }
 }
