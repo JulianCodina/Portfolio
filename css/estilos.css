@@ -1,0 +1,314 @@
+/* Para navegadores webkit (como Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #464646; /* Color del thumb (parte deslizable) */
+    border-radius: 6px; /* Borde redondeado */
+    padding-right: 3px;
+}
+::-webkit-scrollbar-track {
+    background-color: #aaaaaa; /* Color de fondo de la barra de desplazamiento */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Verdana';
+    font-size: 16px;
+    background-image: url('../img/banner4,2.png');
+    height:600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+header .menu {
+    z-index: 1000;
+    margin-top: 10px;
+    display: flex;
+    position: fixed;
+    left: 30%; /* Alinea el header al borde izquierdo */
+    right: 30%; /* Alinea el header al borde derecho */
+    background-color: rgba(0, 0, 0, 0.288); /* Color de fondo con transparencia */
+    backdrop-filter: blur(3px); /* Aplica un desenfoque al fondo */
+    padding: 15px 30px; /* Añade relleno para dar espacio al contenido */
+    border-radius: 25px; /* Añade bordes redondeados para hacerlo un cuadrado difuminoso */
+    overflow: hidden;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+}
+header .menu a{
+    font-size:18px;
+    font-family: 'Helvetica';
+    font-weight: 300;
+    display: inline-block;
+    margin:0 10px;
+    color:#fff;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+header .menu a:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del texto al 110% */
+}
+
+
+.contenido-header{
+    margin: 230px 0 210px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.contenido-header .titulo-header{
+    font-size: 100px;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+}
+.contenido-header .linea-header{
+    width: 900px;
+    margin: auto;
+    height:3px;
+    background: #ffffff;
+    margin-bottom:30px;
+    text-align: center;
+}
+.contenido-header .texto-header{
+    color:#ffffff;
+    font-weight: 300;
+    margin-bottom:30px;
+    font-size:20px;
+    text-align: center;
+}
+.contenido-header .action-header{
+    display: inline-block;
+    margin: auto;
+    color: #ffffff;   
+    text-decoration: none;
+    border:1px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    backdrop-filter: blur(5px); /* Aplica un desenfoque al fondo */
+}
+.contenido-header .action-header:hover{
+    background-color: rgba(44, 44, 44, 0.5);
+    transform: scale(1.2); /* Aumenta el tamaño del texto al 110% */
+}
+
+
+.espacio-vacio{
+    padding: 40px;
+}
+main{
+    padding: 40px 0 0 0;
+    width: 75%;
+    background-color: #ffffffaf;
+    margin: auto;
+    border-radius: 25px;
+    backdrop-filter: blur(5px); /* Aplica un desenfoque al fondo */
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), -4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+main .quienes .quienes-titulo, 
+main .quehacemos .quienes-titulo{
+    color: rgb(43, 43, 43);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom:40px;
+}
+main .quienes-parrafo{
+    text-align: justify;
+    color:#555555;
+    font-weight: 600;
+    font-family: "Verdana";
+    line-height: 1.5;
+}
+main .quehacemos{
+    padding: 40px 0;
+}
+main .contenido-cajas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+main .quehacemos .contenido-cajas .tarjeta{
+    width: calc(23% - 10px);
+    box-sizing: border-box;
+    text-align: center;
+}
+main .tarjeta img{
+    width: 100px; /* Establece el ancho deseado */
+    height: 100px; /* Establece la altura deseada */
+    object-fit: cover;
+}
+main .tarjeta .reloj{
+    margin: 20px 0px 5px 0px;
+    width: 75px; /* Establece el ancho deseado */
+    height: 75px; /* Establece la altura deseada */
+    object-fit: cover;
+}
+main .titulo-tarjeta{
+    margin:20px 0;  
+    color: rgb(43, 43, 43); 
+    font-size: 20px;
+}
+main .parrafo-tarjeta {
+    font-family: Verdana;
+    font-weight: bold;
+    color: #555555;
+    line-height: 1.5;
+    font-size: 15px;
+}
+main .herramientas{
+    background: #e6e6e6dc;
+    padding: 30px 0 80px;
+    margin-bottom: 40px;
+    border-radius: 0 0 25px 25px;
+}
+main .herramientas .herramientas-textos{
+    text-align: center;
+    margin-bottom: 50px;
+    color:rgb(61, 60, 60);
+    font-size: 20px;
+}
+main .herramientas .herramientas-textos p{
+    font-family: Verdana;
+    font-weight: bold;
+    color: #555555;
+    font-size: 15px;
+    margin:15px;
+}
+main .herramientas .galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+main .herramientas .galeria .fotos{
+    width: 30%;
+    margin-bottom:20px;
+}
+main .herramientas .galeria .fotos img{
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+main .herramientas .galeria .fotos img:hover{
+    transform: scale(1.1); /* Aumenta el tamaño del texto al 110% */
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.4), -8px 8px 8px 0rgba(0, 0, 0, 0.4);
+}
+
+
+footer{
+    background: rgba(0, 0, 0, 0.658);
+    padding: 40px 15%;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px -6px 15px 3px rgba(0, 0, 0, 0.3)
+}
+footer .encabezado{
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    color: #ffffff;
+}
+.titulo-footer{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.linea-footer{
+    margin: auto;
+    height:2px;
+    margin-bottom:30px;
+    background-color: #ffffff;
+    display: flex;
+}
+footer img{
+    filter: brightness(0) invert(1);
+    width: 20px; /* Establece el ancho deseado */
+    height: 20px; /* Establece la altura deseada */
+}
+footer .contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.content-foo h4 {
+    text-align: center;
+    color: #fff;
+    margin: 0 0 10px 5px;
+}
+.content-foo p {
+    color: #ccc;
+}
+.content-foo .imgs {
+    justify-content: space-between;
+    display: flex;
+    margin: 0 3px;
+}
+footer .encabezado-titulo{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+@media screen and (max-width:760px){
+    header .menu{
+        justify-content: center;
+    }
+    header .contenido-header .texto-header{
+       font-size:18px;
+    }
+    header .contenido-header .texto-header .desaparecer{
+        display: none;
+    }
+}
+@media screen and (max-width:630px){
+    header .contenido-header .titulo-header{
+        font-size:80px;
+    }
+    header .contenido-header .linea-header{
+        width: 400px;
+    }
+    main .herramientas .galeria .fotos{
+        width:49%;
+    }
+}
+@media screen and (max-width: 500px){
+    header .contenido-header .titulo-header{
+        font-size:40px;
+    }
+    main .quehacemos .contenido-cajas .tarjeta{
+       width: 48%;
+    }
+    main .contenido-cajas{
+        justify-content: center
+    }
+    main .quehacemos .contenido-cajas .tarjeta{
+        margin:20px 0;
+    }
+}
+@media screen and (max-width: 350px){
+    main .quehacemos .contenido-cajas .tarjeta{
+        width: 98%;
+    }
+    header .contenido-header .texto-header{
+        font-size:15px;
+    }
+}
