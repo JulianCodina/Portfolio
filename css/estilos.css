@@ -76,7 +76,7 @@ header .menu a:hover {
       margin-bottom:5px;
     }
     100% {
-      font-size: 100px;
+      font-size: 85px;
       opacity: 1;
       margin-bottom:15px;
     }
@@ -89,8 +89,8 @@ header .menu a:hover {
     margin-bottom:5px;
 }
 100% {
-    width: 900px;
-    opacity: 1;
+    width: 760px;
+    opacity: 0.7;
     height:2px;
     margin-bottom:15px;
 }
@@ -102,7 +102,7 @@ header .menu a:hover {
     margin-bottom:10px;
 }
 100% {
-    font-size: 30px;
+    font-size: 25px;
     opacity: 1;
     margin-bottom:30px;
 }
@@ -162,6 +162,44 @@ header .menu a:hover {
 .contenido-header .action-header:hover{
     background-color: rgba(23, 24, 43, 0.308);
     transform: scale(1.13); /* Aumenta el tamaño del texto al 110% */
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translate(-50%, 0); /* Mantén la posición centrada */
+    }
+    50% {
+      transform: translate(-50%, calc(-10% - 10px)); /* Movimiento hacia arriba */
+    }
+  }
+.contenido-header .contenedor-imagen{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10px;
+    margin: auto auto 0;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards 1.5s, moveUpDown 3s ease-in-out infinite 1.5s;
+    text-decoration: none;
+}
+.contenido-header .contenedor-imagen p{
+    opacity: 0.7;
+    color: white;
+    font-weight: 600;
+    margin: 15px;
+    font-size: 11px;
+}
+.contenido-header .animated-image {
+    width: 30px; /* Ajusta el tamaño según lo que necesites */ 
+    height: 20px;
 }
 
 .espacio-vacio{
@@ -457,7 +495,7 @@ footer .imgs a img {
 }
 100% {
     width: 80%;
-    opacity: 1;
+    opacity: 0.7;
     height:2px;
     margin-bottom:15px;
 }
@@ -474,7 +512,7 @@ footer .imgs a img {
       margin-bottom:30px;
     }
   }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 820px) {
     .contenido-header .linea-header{
         animation: grow-line-small 1.5s ease-in-out forwards;
     }
