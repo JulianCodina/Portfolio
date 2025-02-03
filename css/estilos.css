@@ -543,6 +543,10 @@ footer .imgs a img {
   height: 80px;
   box-shadow: 0px -20px 20px 0px #000000;
 }
+.copyright p{
+  font-size: 12px;
+  opacity: 0.9;
+}
 
 @keyframes grow-h1-small {
   0% {
